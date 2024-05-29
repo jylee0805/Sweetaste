@@ -1,0 +1,135 @@
+@import "reset";
+
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 42px;
+    
+    &__logo{
+        width: 220px;
+        height: 40px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-indent: 101%;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    &__nav{
+        display: flex;
+
+    }
+    &__link{
+        text-decoration: none;
+        color: #3F5D45;
+        padding: 10px 30px;
+    }
+}
+.banner{
+    margin-bottom: 20px;
+    
+    &__img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+.content{
+    margin: 0 auto;
+    padding: 36px 42px;
+    display: flex;
+    flex-direction: column;
+    
+    &__dessert{
+        display: flex;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+        gap: 20px;
+    }
+    &__menu{
+        width:30%;
+    }
+    &__menuItem{
+        display: block;
+        padding: 16px;
+        color: #3F5D45;
+        text-decoration: none;
+        &--title{
+            color: #EAF0ED;
+            background: #3F5D45;
+        }
+        &--select{
+            background: #EAF0ED;
+        }
+    }
+    &__product{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 70%;
+    }
+    &__item{
+        position: relative;
+        width: 47%;
+    }
+    &__img{
+        margin-bottom: 12px;
+
+    }
+    &__tag{
+        position: absolute;
+        writing-mode: vertical-lr;
+        background: #3F5D45;
+        padding: 10px 12px 10px 10px;
+        color: #fff;
+        letter-spacing: 6px;
+        z-index: 1;
+        top: 0;
+        left: 15%;
+        font-size: 16px;
+        
+    }
+    &__text{
+        display: flex;
+        justify-content: center;
+        column-gap: 58px;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #3F5D45;
+        margin-bottom: 12px;
+    }
+    &__add{
+        display: inline-block;
+        text-decoration: none;
+        color: #3F5D45;
+        background: #EAF0ED;
+        padding: 16px 90px;
+        font-weight: 700;
+    }
+    &__page{
+        font-size: 20px;
+        color: #3F5D45;
+        display: flex;
+        align-self: flex-end;
+        
+    }
+    &__pageItem{
+        border: 1px solid #EAF0ED;
+        padding: 16px 26px;
+        &--select{
+            background: #3F5D45;
+            color: #EAF0ED;
+        }
+        &--arrow{
+            padding: 16px 20px;
+        }
+    }
+}
